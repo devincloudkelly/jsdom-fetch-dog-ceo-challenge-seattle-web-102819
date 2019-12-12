@@ -40,12 +40,12 @@ document.addEventListener('DOMContentLoaded', function () {
         allBreeds.forEach( breed => {
             console.log(breed.textContent.charAt(0))
             if (letterSelect == "all breeds") {
-                breed.style.visibility = ""
+                breed.style.display = "block"
             }
             else if (breed.textContent.charAt(0) != letterSelect) {
-                breed.style.visibility = "hidden"
+                breed.style.display = "none"
             } else {
-                breed.style.visibility = ""
+                breed.style.display = "block"
             }
         })
     })
